@@ -11,49 +11,59 @@
     <title>login</title>
 </head>
 <body>
-    <main>
+    <main class="hero">
+        <!-- left section -->
         <section class="left-container">
             <div class="interface">
                 
                 <div class="logo">
-                    <i class="bi bi-lightning-charge"></i>
+                    <div>
+                        <i class="bi bi-lightning-charge-fill"></i>
+                    </div>
                     <span>Lumix Cloud</span>
                 </div>
                 
-                <h1>O futuro da gestão em nuvem</h1>
+                <h1>O futuro da gestão <br> em nuvem</h1>
                 
                 <p>
-                    Seguro, escalável e lindamente projetado para a web moderna.
+                    Seguro, escalável e lindamente projetado para <br> a web moderna.
                 </p>
             </div>
         </section>
-
+        <!-- Fim left section -->
+        
+        <!-- right section -->
         <section class="right-container">
             <div class="interface">
                 <h2>Bem vindo de volta!</h2>
                 
                 <p>Insira seus dados para continuar para o seu painel</p>
 
-                <form action="#" method="post" class="login-form">
+                <!-- form section -->
+
+                <form action="#" method="post" class="login-form" autocomplete="off">
                     
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" required placeholder="name@company.com">
                     </div>
                     
-                    <a href="#">Esqueceu sua senha?</a>
+                    
                     
                     <div class="form-group">
-                        <label for="password">Senha</label>
+                        <div class="form-label">
+                            <label for="password">Senha</label>
+                            <a href="#">Esqueceu sua senha?</a>
+                        </div>
                         <input type="password" id="password" name="password" required placeholder="••••••••">
                     </div>
                     
                     <div class="radio-form">
                         <input type="radio" name="remember" id="remember Me">
-                        <label for="remember Me">Lembre-me</label>
+                        <label for="remember Me">Lembrar de mim</label>
                     </div>
                     
-                    <button class="form-group form-btn" type="submit">Entrar na sua conta</button>
+                    <button class="form-btn" type="submit">Entrar na sua conta</button>
 
                     <div class="divider">
                         <div></div>
@@ -62,28 +72,32 @@
                     </div>
 
                     <div class="social-buttons">
-                        <button type="button">
+                        <button type="button" id="google">
                             <i class="bi bi-google"></i>
                             Google
                         </button>
                         
-                        <button type="button">
+                        <button type="button" id="facebook">
                             <i class="bi bi-facebook"></i>
                             Facebook
                         </button>
                         
-                        <button type="button">
-                            <i class="bi bi-apple"></i>
+                        <button type="button" id="apple">
+                            <i class="bi bi-apple" ></i>
                             Apple
                         </button>
                     </div>
 
-                    <p>
-                        Não tem uma conta? <a href="#">Registre-se</a>
+                    <p class="register-link">
+                        Não tem uma conta? <a class="link" href="#">Registre-se</a>
                     </p>
                 </form>
+                <!-- Fim form section -->
             </div>
+        
         </section>
+        <!-- Fim right section -->
     </main>
+
 </body>
 </html>
