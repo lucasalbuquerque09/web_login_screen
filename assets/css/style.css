@@ -19,6 +19,7 @@ body {
     background-color: var(--color-fundo);
     width: 100vw;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .hero {
@@ -332,6 +333,7 @@ body {
 
 /* media queries tablet */
 @media (max-width: 1024px) and (min-width: 768px) {
+    
     .left-container {
         display: none;
     }
