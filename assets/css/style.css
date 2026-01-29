@@ -53,7 +53,8 @@ body {
     opacity: 0.6;
     z-index: -1;
 }
-.interface{
+
+.interface {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -61,11 +62,13 @@ body {
     height: auto;
     margin-bottom: 180px;
 }
+
 .logo {
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
 .logo div {
     font-size: 24px;
     background-color: var(--color-variant);
@@ -76,21 +79,25 @@ body {
     justify-content: center;
     border-radius: 50px;
 }
+
 .logo span {
     font-size: 20px;
     font-weight: 600;
     color: #ffffff;
 }
+
 .left-container .interface h1 {
     font-size: 48px;
     font-weight: 700;
     color: #ffffff;
 }
+
 .left-container .interface p {
     font-size: 18px;
     color: var(--text-color);
     line-height: 1.5;
 }
+
 /* Fim left styles */
 /* right styles */
 .right-container {
@@ -101,35 +108,39 @@ body {
     height: 100%;
     padding: 0 8%;
 }
+
 .right-container .interface {
     display: flex;
-    width: 80%;
+    width: 500px;
     height: auto;
     gap: 5px;
     margin-top: 150px;
 }
+
 .right-container .interface h2 {
     font-size: 32px;
     font-weight: 700;
     color: #ffffff;
 }
+
 .right-container .interface p {
     font-size: 16px;
     color: var(--text-color);
     margin-bottom: 30px;
 }
 
-.login-form .form-group{
+.login-form .form-group {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .login-form .form-group label {
     font-size: 14px;
     color: #ffffff;
 }
 
-.login-form .form-group input{
+.login-form .form-group input {
     padding: 12px;
     border: none;
     border-radius: 30px;
@@ -140,7 +151,8 @@ body {
     padding-left: 20px;
     border: 1px solid #253023;
 }
-.login-form .form-group input::placeholder{
+
+.login-form .form-group input::placeholder {
     color: #9b9a9a;
 }
 
@@ -150,12 +162,14 @@ body {
     align-items: center;
     margin-top: 20px;
 }
+
 .form-label a {
     position: relative;
     font-size: 14px;
     color: var(--color-variant);
     text-decoration: none;
 }
+
 .form-label a::after {
     content: '';
     position: absolute;
@@ -168,6 +182,7 @@ body {
     transform-origin: right;
     transition: transform 0.5s ease;
 }
+
 .form-label a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
@@ -179,6 +194,7 @@ body {
     gap: 10px;
     margin: 10px 0;
 }
+
 .radio-form input[type="radio"] {
     width: 16px;
     height: 16px;
@@ -192,8 +208,9 @@ body {
 }
 
 .radio-form input[type="radio"]:checked {
-    background-color: var(--color-variant);
+    background-color: var(--text-color);
 }
+
 .radio-form label {
     font-size: 14px;
     color: var(--text-color);
@@ -212,8 +229,9 @@ body {
     margin-top: 10px;
     transition: background-color 0.3s ease;
 }
+
 .form-btn:hover {
-    background-color: #3ac10b;
+    background-color: #30970e;
 }
 
 .divider {
@@ -221,12 +239,14 @@ body {
     align-items: center;
     margin: 20px 0;
 }
+
 .divider div {
     flex: 1;
     height: 1px;
     background-color: #444444;
     margin: 0 10px;
 }
+
 .divider span {
     font-size: 14px;
     color: var(--text-color);
@@ -238,9 +258,10 @@ body {
     align-items: center;
     gap: 30px;
 }
+
 .social-buttons button {
     color: #ffffff;
-    width: 300px;
+    width: 50px;
     height: 50px;
     gap: 10px;
     border: none;
@@ -251,7 +272,7 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: transform 0.9s ease;
+    transition: transform 0.5s ease;
 }
 
 
@@ -259,30 +280,36 @@ body {
 .social-buttons button i {
     font-size: 20px;
 }
+
 #google:hover {
     background-color: #db4437;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
+
 #facebook:hover {
     background-color: #3b5998;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
+
 #apple:hover {
     background-color: #000000;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
+
 .register-link {
     text-align: center;
     font-size: 14px;
     color: var(--text-color);
     margin-top: 30px;
 }
+
 .register-link .link {
     padding-left: 5px;
     position: relative;
     color: var(--color-variant);
     text-decoration: none;
-} 
+}
+
 .register-link .link::after {
     content: '';
     position: absolute;
@@ -295,9 +322,114 @@ body {
     transform-origin: right;
     transition: transform 0.5s ease;
 }
+
 .register-link .link:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }
 
 /* Fim right styles */
+
+/* media queries tablet */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .left-container {
+        display: none;
+    }
+
+    .right-container {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .right-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../img/right-img.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    .right-container .interface {
+        width: 550px;
+        background-color: transparent;
+        backdrop-filter: blur(5px);
+        padding: 30px;
+        border: 1px solid #ffffff33;
+        border-radius: 20px;
+    }
+
+    .right-container .interface p {
+        color: #d1d1d1ec;
+    }
+
+    .radio-form label {
+        color: #d1d1d1ec;
+    }
+
+    .divider span {
+        color: #d1d1d1ec;
+    }
+}
+
+/* Fim media queries tablet */
+/* media queries mobile */
+@media (max-width: 767px){
+    .left-container {
+        display: none;
+    }
+
+    .right-container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .right-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/right-img.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        opacity: 0.4;
+        z-index: -1;
+    }
+
+    .right-container .interface {
+        width: 400px;
+        margin: 100px 0;
+    }
+
+    .right-container .interface p {
+        color: #d1d1d1ec;
+    }
+
+    .radio-form label {
+        color: #d1d1d1ec;
+    }
+
+    .divider span {
+        color: #d1d1d1ec;
+    }
+
+    .social-buttons button {
+        width: 40px;
+        height: 40px;
+    }
+    .social-buttons button i {
+        font-size: 18px;
+    }
+
+}  
